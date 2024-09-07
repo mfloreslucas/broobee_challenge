@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes subtleBlink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; } /* En lugar de desaparecer, baja la opacidad a la mitad */
+    100% { opacity: 1; }
+}
+
+.blink {
+    animation: subtleBlink 0.5s ease-in-out infinite;
+}
