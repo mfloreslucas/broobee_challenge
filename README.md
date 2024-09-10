@@ -41,7 +41,9 @@ php artisan key:generate
 
 ### 6. Ejecutar Migraciones y Seeders
 ```bash
-php artisan migrate --seed
+php artisan migrate
+php artisan db:seed --class=CategorySeeder
+php artisan db:seed --class=StrategySeeder
 ```
 
 ### 7. Levantar el Servidor de Desarrollo y el de npm
