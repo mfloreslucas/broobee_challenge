@@ -35,14 +35,14 @@ npm install
 ```bash
 php artisan key:generate
 ```
+### 5. Iniciar XAMPP
+- Abre el Panel de Control de XAMPP.
+- Inicia Apache y MySQL.
 
-### 5. Ejecutar Migraciones y Seeders
+### 6. Ejecutar Migraciones y Seeders
 ```bash
 php artisan migrate --seed
 ```
-### 6. Iniciar XAMPP y npm
-- Abre el Panel de Control de XAMPP.
-- Inicia Apache y MySQL.
 
 ### 7. Levantar el Servidor de Desarrollo y el de npm
 
