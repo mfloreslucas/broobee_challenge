@@ -1,10 +1,5 @@
 # Proyecto Laravel BROOBE con XAMPP
 
-<div align="center">
-<img src="https://i.pinimg.com/originals/58/99/a5/5899a55898e329daca9ec8a5a31713c5.gif" alt="GitHub Logo" width="150" height="150" />
-</div>
-
-
 ## Versiones Utilizadas
 
 - **PHP**: 8.12
@@ -58,6 +53,8 @@ php artisan serve
 npm run dev
 ```
 
+### 8. Genial! Si todo salio bien, el servidor deberia estar corriendo en 127.0.0.1:8000
+
 ## Notas adicionales
 - Si en el paso 5 hay problemas, hacer rollback y tirar primero
 ```bash
@@ -68,3 +65,10 @@ Y luego
 php artisan db:seed 
 ```
 - La tabla utilizada que utiliza el sistema en MySQL es tiene el nombre 'broobe_challenge', se puede cambiar el nombre en el .env
+
+
+
+<div align="center">
+<img src="https://i.pinimg.com/originals/58/99/a5/5899a55898e329daca9ec8a5a31713c5.gif" alt="GitHub Logo" width="250" height="auto" />
+</div>
+
