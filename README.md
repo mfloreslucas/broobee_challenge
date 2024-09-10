@@ -1,6 +1,8 @@
 # Proyecto Laravel BROOBE con XAMPP
 
-![]([https://github.com/Your_Repository_Name/Your_GIF_Name.gif](https://i.pinimg.com/originals/58/99/a5/5899a55898e329daca9ec8a5a31713c5.gif))
+<div align="center">
+<img src="https://i.pinimg.com/originals/58/99/a5/5899a55898e329daca9ec8a5a31713c5.gif" alt="GitHub Logo" width="150" height="150" />
+</div>
 
 
 ## Versiones Utilizadas
