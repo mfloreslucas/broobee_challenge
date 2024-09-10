@@ -1,4 +1,4 @@
-# Proyecto Laravel con XAMPP
+# Proyecto Laravel BROOBE con XAMPP
 
 ## Versiones Utilizadas
 
@@ -19,11 +19,11 @@
 ### 1. Clonar el Repositorio
 
 ```bash
-git clone https://github.com/tu_usuario/tu_proyecto.git
-cd tu_proyecto
+git clone https://github.com/mfloreslucas/broobee_challenge.git
+cd your_local_path
 ```
 
-### 2. Configurar el Archivo .env ya existente de ser necesario 
+### 2. Configurar el Archivo .env ya existente de ser necesario (username + password para db en entorno local)
 
 ### 3. Instalar Dependencias
 ```bash
@@ -44,9 +44,20 @@ php artisan migrate --seed
 - Abre el Panel de Control de XAMPP.
 - Inicia Apache y MySQL.
 
-### 6. Levantar el Servidor de Desarrollo y el de npm
+### 7. Levantar el Servidor de Desarrollo y el de npm
 
 ```bash
 php artisan serve
 npm run dev
 ```
+
+## Notas adicionales
+- Si en el paso 5 hay problemas, hacer rollback y tirar primero
+```bash
+php artisan migrate:fresh
+```
+Y luego
+```bash
+php artisan db:seed 
+```
+- La tabla utilizada que utiliza el sistema en MySQL es tiene el nombre 'broobe_challenge', se puede cambiar el nombre en el .env
