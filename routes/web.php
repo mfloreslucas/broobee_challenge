@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MetricController;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,24 +16,12 @@ use App\Http\Controllers\MetricController;
 */
 
 /******** Views ********/
-
-Route::get('/', function () {
-    return view('content.welcome');
-});
-
-// Route::get('/run_metric', function () {
-//     return view('content.run_metric');
-// });
-
-Route::get('/run_metric', [MetricController::class, 'index']);
-
-Route::get('/metric_history', function () {
-    return view('content.metric_history');
-});
-
+Route::get('/', fn() => view('content.welcome'));
+Route::get('/run_metric', [DashboardController::class, 'index']);
 
 /******** Controllers(Functions) ********/
-Route::get('/metrics', [MetricController::class, 'index']);
+// Route::get('/metrics', [MetricController::class, 'index']);
+Route::get('/metric_history', [MetricController::class, 'index'])->name('metric_history.index');
+
 Route::post('/get-metrics', [MetricController::class, 'getMetrics']);
 Route::post('/save-metric-history', [MetricController::class, 'store']);
-

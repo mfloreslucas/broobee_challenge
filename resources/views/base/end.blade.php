@@ -1,22 +1,28 @@
 <!-- scripts -->
- {{-- <script src="{{ asset('js/app.js') }}"></script> --}}
- <script>
         
-    var toggleOpen = document.getElementById('toggleOpen');
-    var toggleClose = document.getElementById('toggleClose');
-    var collapseMenu = document.getElementById('collapseMenu');
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="module">
+    $(document).ready(function() {
+        var toggleOpen = $('#toggleOpen');
+        var toggleClose = $('#toggleClose');
+        var collapseMenu = $('#collapseMenu');
 
-    function handleClick() {
-    if (collapseMenu.style.display === 'block') {
-        collapseMenu.style.display = 'none';
-    } else {
-        collapseMenu.style.display = 'block';
-    }
-    }
+        function handleClick() {
+            if (collapseMenu.css('display') === 'block') {
+                collapseMenu.slideUp(500, function() {
+                    collapseMenu.css('display', 'none');
+                });
+            } else {
+                collapseMenu.slideDown(500, function() {
+                    collapseMenu.css('display', 'block');
+                });
+            }
+        }
 
-    toggleOpen.addEventListener('click', handleClick);
-    toggleClose.addEventListener('click', handleClick);
- </script>
+        toggleOpen.on('click', handleClick);
+        toggleClose.on('click', handleClick);
+    });
+</script>
 <!-- end scripts -->
 
 </body>
