@@ -2,11 +2,11 @@
 
 ## Versiones Utilizadas
 
-- **PHP**: 7.4.3
-- **Laravel**: 8.12
-- **MySQL**: 5.7 (Incluido en XAMPP)
-- **Node.js**: 14.15.4
-- **NPM**: 6.14.10
+- **PHP**: 8.12
+- **Laravel**: 10.X(10.48.2)
+- **MySQL**: 8.0.28
+- **Node.js**: 16.13.0
+- **NPM**: 9.6.2
 
 ## Requisitos Previos
 
