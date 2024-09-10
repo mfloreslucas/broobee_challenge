@@ -21,8 +21,8 @@
                 </div>
 
                 <p class="text-slate-600 leading-normal font-light">
-                    Herramienta para buscar las metricas de una pagina utilizando la api de PageSpeed Insights creada por Google.
-                    <br>Utiliza la herramienta para analizar el rendimiento de tu sitio web, obteniendo información detallada sobre la velocidad de carga, la interactividad y la estabilidad visual tanto en dispositivos móviles como en escritorio.
+                    Tool for retrieving website metrics using the Google PageSpeed Insights API.
+                    <br>Use this tool to analyze your site's performance and get detailed insights into load speed, interactivity, and visual stability across mobile and desktop devices.
                 </p>
             </div>
         </a>
@@ -44,9 +44,8 @@
                 </div>
 
                 <p class="text-slate-600 leading-normal font-light">
-                    Historial de métricas de las páginas analizadas anteriormente.
-                    <br>En esta sección, podrás consultar los resultados de las búsquedas que has guardado previamente. Accede a los informes detallados de rendimiento y optimización para cada página que hayas analizado con información histórica sobre su velocidad de carga, interactividad y estabilidad visual.
-
+                    History of metrics for previously analyzed pages.
+                    <br>In this section, you can review the results of previously saved searches. Access detailed performance and optimization reports for each page analyzed, including historical information on load speed, interactivity, and visual stability.
                 </p>
             </div>
         </a>

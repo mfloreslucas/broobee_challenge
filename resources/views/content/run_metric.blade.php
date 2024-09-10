@@ -4,6 +4,8 @@
 
 @section('title', 'Run Metric')
 
+@section('description', "This section allows you to perform a new analysis of your website's performance. Enter the URL you wish to evaluate and select the categories and strategy for the test. The tool will provide you with up-to-date insights into loading speed, interactivity, and visual stability on both mobile and desktop devices. Review the latest results and take action to optimize your site based on the most recent data.")
+
 @section('content')
     <div class="flex flex-col w-full m-auto md:mt-6 md:flex-row gap-2">
         <form class="w-full" id="metricsForm">
@@ -87,6 +89,7 @@
     <div id="loader" class="hidden flex flex-col m-auto md:mt-6 md:flex-row gap-2 w-full md:w-[90%]">
         <div role='status' class='w-full animate-pulse'>
             <h3 class='h-3 bg-gray-300 rounded-full  w-[25%] mb-4'></h3>
+            <p class='h-2 text-light text-gray-300 mb-3 '>The results might take several seconds</p>
             <p class='h-2 bg-gray-300 rounded-full max-w-[80%] mb-2.5'></p>
             <p class='h-2 bg-gray-300 rounded-full max-w-[100%] mb-2.5'></p>
             <p class='h-2 bg-gray-300 rounded-full max-w-[90%] mb-2.5'></p>

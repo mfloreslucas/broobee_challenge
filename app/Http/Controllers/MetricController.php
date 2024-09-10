@@ -7,6 +7,7 @@ use GuzzleHttp\Client;
 use App\Models\MetricHistoryRun;
 use App\Models\Strategy;
 use Yajra\DataTables\Facades\DataTables;
+use Carbon\Carbon;
 
 class MetricController extends Controller
 {
@@ -18,8 +19,13 @@ class MetricController extends Controller
 
             return Datatables::of($data)
                 ->addIndexColumn()
+                ->addColumn('created_at', function ($row) {
+                    return Carbon::parse($row->created_at)->format('d/m/Y H:i');
+                })
                 ->addColumn('action', function ($row) {
-                    $btn = '<a href="javascript:void(0)" class="edit btn btn-primary btn-sm">View</a>';
+                    $btn = '<a href="javascript:void(0)" class="flex items-center justify-center bg-indigo-400 hover:bg-infoActive rounded-xl h-10 w-10 transition duration-300" id="' . $row->id . '">
+                        <i class="fas fa-info-circle text-sky-800"></i>
+                    </a>';
                     return $btn;
                 })
                 ->rawColumns(['action'])
