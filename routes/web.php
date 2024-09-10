@@ -20,7 +20,6 @@ Route::get('/', fn() => view('content.welcome'));
 Route::get('/run_metric', [DashboardController::class, 'index']);
 
 /******** Controllers(Functions) ********/
-// Route::get('/metrics', [MetricController::class, 'index']);
 Route::get('/metric_history', [MetricController::class, 'index'])->name('metric_history.index');
 
 Route::post('/get-metrics', [MetricController::class, 'getMetrics']);
